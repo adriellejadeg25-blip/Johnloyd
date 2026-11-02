@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#00f7ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+section{
+min-height:100vh;
+padding:120px 10%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:5rem;
+background:linear-gradient(90deg,#00f7ff,#00ffae);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-top:20px;
+color:#cbd5e1;
+}
+
+.btn{
+margin-top:30px;
+display:inline-block;
+padding:15px 35px;
+background:#00f7ff;
+color:black;
+font-weight:bold;
+border-radius:40px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.title{
+font-size:3rem;
+text-align:center;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+padding:30px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00f7ff;
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.timeline-item{
+padding:25px;
+background:rgba(255,255,255,.05);
+border-left:5px solid #00f7ff;
+border-radius:10px;
+}
+
+.contact-box{
+text-align:center;
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">MY INFO</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#technical">Technical</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section id="home">
+
+<div class="hero">
+
+<h1>Hello, I'm Your Name</h1>
+
+<p>
+Welcome to my personal presentation website.
+This project showcases my skills, achievements,
+educational background, and technical knowledge.
+</p>
+
+<a href="#skills" class="btn">
+Explore My Portfolio
+</a>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div style="width:100%;">
+
+<h2 class="title">
+Skills & Projects
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>IT Helpdesk</h3>
+<p>Troubleshooting software and hardware issues.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Creating websites using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>Basic network setup and diagnostics.</p>
+</div>
+
+<div class="card">
+<h3>Projects</h3>
+<p>Portfolio Websites, School Systems, PC Setup.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<div style="width:100%;">
+
+<h2 class="title">
+Educational Background & Achievements
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Senior High School</h3>
+<p>Insert Your School Name</p>
+</div>
+
+<div class="timeline-item">
+<h3>Current Course</h3>
+<p>Information Technology</p>
+</div>
+
+<div class="timeline-item">
+<h3>Achievements</h3>
+<p>
+🏆 Academic Excellence <br>
+🏆 Outstanding Project <br>
+🏆 Technical Certification
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="technical">
+
+<div class="contact-box">
+
+<h2 class="title">
+Technical Demonstration
+</h2>
+
+<p>
+Click below to view a dedicated page
+showcasing my technical skills and projects.
+</p>
+
+<br><br>
+
+<a href="technical-demo.html" class="btn">
+Open Technical Demo
+</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2 class="title">
+Contact Me
+</h2>
+
+<p>📧 your@email.com</p>
+<p>📱 09XXXXXXXXX</p>
+<p>📍 Your City</p>
+<p>💻 GitHub Profile</p>
+
+</div>
+
+</section>
+
+<footer>
+
+2026 © Your Name
+
+</footer>
+
+</body>
+</html>
